@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vance-systems.github.io/developer-docs/sitemap.xml

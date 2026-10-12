@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkPreview Rich Meta Tag API Documentation & Integration Guide | Vance Systems Developer Hub</title>
+    <meta name="description" content="Complete guide to integrating LinkPreview Rich Meta Tag API with Python, Node.js, and cURL. Includes free tier endpoints, authentication headers, and response formats.">
+    <meta name="robots" content="index, follow">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google AdSense Auto-Ads Tag -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8912740921820491"
+            crossorigin="anonymous"></script>
+    
+    <style>
+        body { background-color: #0b0f19; color: #e2e8f0; font-family: ui-sans-serif, system-ui, sans-serif; }
+        .code-box { background: #030712; border: 1px solid #1f2937; border-radius: 0.5rem; }
+        .gradient-text { background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30">V</div>
+                <span class="font-bold text-lg tracking-tight text-white">Vance Systems <span class="text-xs px-2 py-0.5 rounded bg-indigo-900/60 text-indigo-300 font-mono">DevHub</span></span>
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="https://rapidapi.com/studio" target="_blank" class="text-sm font-medium text-slate-300 hover:text-white transition">RapidAPI Hub</a>
+                <a href="https://github.com/Vance-Systems" target="_blank" class="text-sm font-medium text-slate-300 hover:text-white transition"><i class="fa-brands fa-github mr-1"></i> GitHub</a>
+                <a href="https://rapidapi.com/studio" target="_blank" class="text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-1.5 rounded-md transition shadow">Get Free API Key</a>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-8 w-full">
+    
+    <div class="ad-container my-4 p-2 bg-slate-900 border border-slate-800 rounded-lg text-center">
+        <span class="text-xs text-slate-500 uppercase tracking-widest block mb-1">Sponsored Advertisement</span>
+        <!-- Google AdSense Display Unit: linkpreview-api-Top-Slot -->
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-8912740921820491"
+             data-ad-slot="1234567890"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    
+        <div class="mb-8">
+            <a href="index.html" class="text-sm text-indigo-400 hover:underline mb-3 inline-block">← Back to All APIs</a>
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-800 text-indigo-300 uppercase tracking-wider">Data / Web Tools</span>
+                    <h1 class="text-3xl font-extrabold text-white mt-2">LinkPreview Rich Meta Tag API</h1>
+                </div>
+                <div class="flex gap-2">
+                    <a href="https://rapidapi.com/studio" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow transition">Subscribe on RapidAPI</a>
+                    <a href="https://linkpreview-api-nd61.onrender.com/health" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm px-3 py-2 rounded-lg transition font-mono">Test Live /health</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 mb-8">
+            <h2 class="text-xl font-bold text-white mb-2">Service Overview</h2>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                <strong>LinkPreview Rich Meta Tag API</strong> is an enterprise-grade cloud API designed for high-concurrency microservice architectures. 
+                Deploys instantly with standard JSON responses, low-latency execution, and continuous health checking.
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div class="p-3 bg-slate-950 rounded-lg border border-slate-800/80">
+                    <div class="text-xs text-slate-500">Latency</div>
+                    <div class="text-lg font-bold text-emerald-400 font-mono">~135ms</div>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-lg border border-slate-800/80">
+                    <div class="text-xs text-slate-500">Free Tier</div>
+                    <div class="text-lg font-bold text-white font-mono">100 Calls/mo</div>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-lg border border-slate-800/80">
+                    <div class="text-xs text-slate-500">Security</div>
+                    <div class="text-lg font-bold text-indigo-400 font-mono">HMAC / SSL</div>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-lg border border-slate-800/80">
+                    <div class="text-xs text-slate-500">Format</div>
+                    <div class="text-lg font-bold text-amber-400 font-mono">JSON / REST</div>
+                </div>
+            </div>
+        </div>
+
+        
+    <div class="ad-container my-4 p-2 bg-slate-900 border border-slate-800 rounded-lg text-center">
+        <span class="text-xs text-slate-500 uppercase tracking-widest block mb-1">Sponsored Advertisement</span>
+        <!-- Google AdSense Display Unit: linkpreview-api-Mid-Content -->
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-8912740921820491"
+             data-ad-slot="1234567890"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    
+
+        <div class="space-y-6">
+            <h2 class="text-2xl font-bold text-white">Integration Code Examples</h2>
+
+            <div>
+                <h3 class="text-sm font-semibold text-slate-300 mb-2 flex items-center gap-2">
+                    <i class="fa-brands fa-python text-amber-400"></i> Python (requests)
+                </h3>
+                <pre class="code-box p-4 text-xs font-mono text-emerald-300 overflow-x-auto"><code>import requests
+
+url = "https://linkpreview-api-nd61.onrender.com/health"
+headers = {
+    "X-RapidAPI-Key": "YOUR_RAPIDAPI_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.get(url, headers=headers)
+print(response.json())</code></pre>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-slate-300 mb-2 flex items-center gap-2">
+                    <i class="fa-brands fa-node-js text-emerald-400"></i> Node.js (fetch)
+                </h3>
+                <pre class="code-box p-4 text-xs font-mono text-cyan-300 overflow-x-auto"><code>const fetch = require('node-fetch');
+
+async function testApi() {
+    const response = await fetch('https://linkpreview-api-nd61.onrender.com/health', {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'YOUR_RAPIDAPI_KEY',
+            'Content-Type': 'application/json'
+        }
+    });
+    const data = await response.json();
+    console.log(data);
+}
+testApi();</code></pre>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-slate-300 mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-terminal text-slate-400"></i> cURL Command Line
+                </h3>
+                <pre class="code-box p-4 text-xs font-mono text-slate-300 overflow-x-auto"><code>curl -X GET "https://linkpreview-api-nd61.onrender.com/health" \
+     -H "X-RapidAPI-Key: YOUR_RAPIDAPI_KEY" \
+     -H "Content-Type: application/json"</code></pre>
+            </div>
+        </div>
+
+        
+    <div class="ad-container my-4 p-2 bg-slate-900 border border-slate-800 rounded-lg text-center">
+        <span class="text-xs text-slate-500 uppercase tracking-widest block mb-1">Sponsored Advertisement</span>
+        <!-- Google AdSense Display Unit: linkpreview-api-Bottom-Slot -->
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-8912740921820491"
+             data-ad-slot="1234567890"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    
+    
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 mt-12 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 Vance Systems Autonomous Cloud Operations. All APIs hosted on Render & RapidAPI.</p>
+            <p class="mt-1 text-xs text-slate-600">Built with 100% Autonomous Telemetry & Programmatic SEO Architecture.</p>
+        </div>
+    </footer>
+</body>
+</html>
+    
