@@ -17,6 +17,8 @@
         body { background-color: #0b0f19; color: #e2e8f0; font-family: ui-sans-serif, system-ui, sans-serif; }
         .code-box { background: #030712; border: 1px solid #1f2937; border-radius: 0.5rem; }
         .gradient-text { background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
+        ins.adsbygoogle[data-ad-status="filled"] + .ad-fallback { display: none !important; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -35,16 +37,36 @@
     </nav>
     <main class="flex-grow max-w-5xl mx-auto px-4 py-8 w-full">
     
-    <div class="ad-container my-4 p-2 bg-slate-900 border border-slate-800 rounded-lg text-center">
-        <span class="text-xs text-slate-500 uppercase tracking-widest block mb-1">Sponsored Advertisement</span>
+    <div class="ad-container my-6 p-4 rounded-xl bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-slate-800 text-center relative overflow-hidden group">
+        <div class="flex items-center justify-between text-xs text-slate-500 mb-2 px-1">
+            <span class="tracking-widest uppercase flex items-center gap-1.5"><i class="fa-solid fa-bolt text-indigo-400"></i> Sponsored / Platform Showcase</span>
+            <span class="text-[10px] text-slate-500 font-mono">DevHub Cloud</span>
+        </div>
         <!-- Google AdSense Display Unit: scraperadar-api-Top-Slot -->
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
+        <ins class="adsbygoogle block text-center"
+             style="display:block; min-height:60px;"
              data-ad-layout="in-article"
              data-ad-format="fluid"
              data-ad-client="ca-pub-7832552070060918"
-             data-ad-slot="1234567890"></ins>
+             ></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        
+        <!-- Intelligent Fallback: Appears when AdSense slot is pending approval or unfilled -->
+        <div class="ad-fallback mt-2 p-3 rounded-lg bg-indigo-950/30 border border-indigo-800/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center shrink-0 text-base">
+                    <i class="fa-solid fa-cloud-bolt"></i>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold text-white">Vance Systems High-Performance API Fleet</div>
+                    <div class="text-xs text-slate-400">Sub-50ms latency, enterprise SLA, and zero-setup deployment on RapidAPI.</div>
+                </div>
+            </div>
+            <a href="https://rapidapi.com/studio" target="_blank" class="shrink-0 px-3.5 py-1.5 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition flex items-center gap-1.5 shadow">
+                <span>Explore 24 APIs</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+        </div>
     </div>
     
         <div class="mb-8">
@@ -88,16 +110,36 @@
         </div>
 
         
-    <div class="ad-container my-4 p-2 bg-slate-900 border border-slate-800 rounded-lg text-center">
-        <span class="text-xs text-slate-500 uppercase tracking-widest block mb-1">Sponsored Advertisement</span>
+    <div class="ad-container my-6 p-4 rounded-xl bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-slate-800 text-center relative overflow-hidden group">
+        <div class="flex items-center justify-between text-xs text-slate-500 mb-2 px-1">
+            <span class="tracking-widest uppercase flex items-center gap-1.5"><i class="fa-solid fa-bolt text-indigo-400"></i> Sponsored / Platform Showcase</span>
+            <span class="text-[10px] text-slate-500 font-mono">DevHub Cloud</span>
+        </div>
         <!-- Google AdSense Display Unit: scraperadar-api-Mid-Content -->
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
+        <ins class="adsbygoogle block text-center"
+             style="display:block; min-height:60px;"
              data-ad-layout="in-article"
              data-ad-format="fluid"
              data-ad-client="ca-pub-7832552070060918"
-             data-ad-slot="1234567890"></ins>
+             ></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        
+        <!-- Intelligent Fallback: Appears when AdSense slot is pending approval or unfilled -->
+        <div class="ad-fallback mt-2 p-3 rounded-lg bg-indigo-950/30 border border-indigo-800/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center shrink-0 text-base">
+                    <i class="fa-solid fa-cloud-bolt"></i>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold text-white">Vance Systems High-Performance API Fleet</div>
+                    <div class="text-xs text-slate-400">Sub-50ms latency, enterprise SLA, and zero-setup deployment on RapidAPI.</div>
+                </div>
+            </div>
+            <a href="https://rapidapi.com/studio" target="_blank" class="shrink-0 px-3.5 py-1.5 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition flex items-center gap-1.5 shadow">
+                <span>Explore 24 APIs</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+        </div>
     </div>
     
 
@@ -151,16 +193,36 @@ testApi();</code></pre>
         </div>
 
         
-    <div class="ad-container my-4 p-2 bg-slate-900 border border-slate-800 rounded-lg text-center">
-        <span class="text-xs text-slate-500 uppercase tracking-widest block mb-1">Sponsored Advertisement</span>
+    <div class="ad-container my-6 p-4 rounded-xl bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-slate-800 text-center relative overflow-hidden group">
+        <div class="flex items-center justify-between text-xs text-slate-500 mb-2 px-1">
+            <span class="tracking-widest uppercase flex items-center gap-1.5"><i class="fa-solid fa-bolt text-indigo-400"></i> Sponsored / Platform Showcase</span>
+            <span class="text-[10px] text-slate-500 font-mono">DevHub Cloud</span>
+        </div>
         <!-- Google AdSense Display Unit: scraperadar-api-Bottom-Slot -->
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
+        <ins class="adsbygoogle block text-center"
+             style="display:block; min-height:60px;"
              data-ad-layout="in-article"
              data-ad-format="fluid"
              data-ad-client="ca-pub-7832552070060918"
-             data-ad-slot="1234567890"></ins>
+             ></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        
+        <!-- Intelligent Fallback: Appears when AdSense slot is pending approval or unfilled -->
+        <div class="ad-fallback mt-2 p-3 rounded-lg bg-indigo-950/30 border border-indigo-800/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center shrink-0 text-base">
+                    <i class="fa-solid fa-cloud-bolt"></i>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold text-white">Vance Systems High-Performance API Fleet</div>
+                    <div class="text-xs text-slate-400">Sub-50ms latency, enterprise SLA, and zero-setup deployment on RapidAPI.</div>
+                </div>
+            </div>
+            <a href="https://rapidapi.com/studio" target="_blank" class="shrink-0 px-3.5 py-1.5 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition flex items-center gap-1.5 shadow">
+                <span>Explore 24 APIs</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+        </div>
     </div>
     
     
